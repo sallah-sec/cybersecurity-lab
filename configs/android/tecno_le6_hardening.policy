@@ -1,0 +1,47 @@
+# Policy: TECNO LE6 Hardening Configuration
+# Case Ref: TECHNO-LE6-KALI-20260731
+# Author: Yumanang Sallah
+# Date: 2026-07-31
+
+## BOOT SECURITY
+verified_boot_state: green
+bootloader_state: locked
+oem_unlocking: disabled
+secure_startup: enabled
+
+## ENCRYPTION
+encryption_type: file_based_encryption_v1
+encryption_state: encrypted
+strong_unlock_method: pin_6digit_minimum
+
+## UPDATE POLICY
+auto_ota_download: disabled
+auto_ota_install: disabled
+manual_review_required: true
+
+## NETWORK
+wifi_auto_connect: disabled
+wifi_bluetooth_scanning: disabled
+ad_personalization: opted_out
+
+## PERMISSIONS
+camera_access: whitelist_only
+microphone_access: whitelist_only
+location_access: deny_by_default
+contacts_access: deny_by_default
+sms_access: whitelist_only
+
+## BLOATWARE STATUS
+transsion_apps: disabled_or_uninstalled
+facebook_meta_apps: disabled_or_uninstalled
+unknown_preinstalled: review_required
+
+## MONITORING
+avb_check_frequency: monthly
+storage_check_frequency: weekly
+logcat_monitoring: during_heavy_usage
+
+## INCIDENT RESPONSE
+recovery_mode_access: volume_up_plus_power
+adb_enabled: true
+adb_authorization: rsa_trusted_only
