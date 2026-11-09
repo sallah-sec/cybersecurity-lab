@@ -1,3 +1,6 @@
+### 📄 Featured Project: Enterprise SOC Lab Capstone
+Built an isolated SOC laboratory integrating Wazuh (SIEM/XDR), Splunk, rsyslog, and Suricata with MITRE Caldera for adversary emulation. 
+👉 **[Click here to view the full Capstone Report](https://github.com/sallah-sec/cybersecurity-lab/blob/main/wazuh-suricata-lab/SOC-Lab-Capstone-Report-Yumanang-Sallah.pdf)**
 ## Incident Response & Mobile Security
 
 ### Case Studies
